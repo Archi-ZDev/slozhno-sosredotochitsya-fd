@@ -9,4 +9,55 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: url(../images/cover-image-dark.png);
+  .header__theme-menu-item {
+    color: var(--color);
+  }
+  .header__theme-menu-button {
+    color: var(--color);
+  }
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--hover-border-color);
+  }
+  .header__theme-menu-button:focus {
+    border: var(--border-focus);
+  }
+  .decorated-zone::after {
+    border-top: 1px solid var(--color);
+    border-right: 1px solid var(--box-shadow-color);
+  }
+  .decorated-zone::before {
+    border-bottom: 1px solid var(--color);
+    border-left: 1px solid var(--box-shadow-color);
+  }
+  .header_title {
+    color: var(--color);
+    text-shadow: var(--text-shadow);
+  }
+  .header_text {
+    color: var(--color);
+    background-color: var(--background-color);
+  }
+  .main_section_title {
+    color: var(--color);
+  }
+  .section_text_item {
+    background-color: var(--background-color);
+    color: var(--color);
+  }
+  .section_text {
+    color:var(--color);
+  }
+  .main_text_button {
+  --text-color:#F1B2CE;
+  --text-shadow-button:#FF0070;
+  }
+  .text-section__texts-title {
+    background-color: var(--background-color);
+    color: var(--color);
+  }
+  .footer_title {
+     color: var(--color);
+     text-shadow: var(--text-shadow);
+  }
 }
