@@ -439,9 +439,9 @@ z-index: 0;
         grid-column: 1/4;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        .food {
-          margin-block-start: 0; 
-      }
+          .food {
+            margin-block-start: 0;
+          }
         .gadgets {
           margin-block-start: 0;
         }
