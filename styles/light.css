@@ -10,106 +10,55 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
-  .header__theme-menu-item {
-  --color:#353430;
-}
-.icon {
-  visibility:hidden;
-}
-.decorated-zone::after {
-  --color:#353430;
-  --box-shadow-color:#353430;
-  }
-.decorated-zone::before {
-  --color:#353430;
-  --box-shadow-color:#353430;
-}
-.header__theme-menu-button {
-  --color:#353430;
-}
-.header__theme-menu-button:hover {
-  --hover-border-color:#32312D66;
-}
-.header_title {
-  --color:#FFC2E6;
-  --text-shadow: 4px 4px #FF8DCB;
-}
-.header_text {
-  --color:#353430;
-  --background-color:#FF8DCB;
-}
-.main_section_title {
-  --color:#353430;
-}
-.text-section__texts-title {
-  --color: #353430;
-  --background-color: #FF8DCB;
-}
-.section_text_item {
-  --color: #353430;
-  --background-color:#FF8DCB;
-}
-.section_text {
-  --color:#353430;
-}
-.main_text_button {
-  --text-color:#353430;
-  --text-shadow-button:#FF8DCB;
-  }
-.footer_title {
-  --color:#FFC2E6;
-  --text-shadow:2px 2px #FF8DCB;
-}
+  --bk-color:#fff1f7;
+  --header-theme-menu-item-color:#353430;
+  --icon-visibility:hidden;
+  --dec-zone-after-color:#353430;
+  --dec-zone-after-box-shadow-color:#353430;
+  --dec-zone-before-color:#353430;
+  --dec-zone-before-box-shadow-color:#353430;
+  --header-theme-menu-button-color:#353430;
+  --header-theme-menu-button-hover-border-color:#32312D66;
+  --header-title-color:#FFC2E6;
+  --header-title-text-shadow: 4px 4px #FF8DCB;
+  --header-text-color:#353430;
+  --header-text-bk-color:#FF8DCB;
+  --main-sextion-title-color:#353430;
+  --text-section-texts-title-color: #353430;
+  --text-section-texts-title-bk-color: #FF8DCB;
+  --section-text-item-color: #353430;
+  --section-text-item-bk-color:#FF8DCB;
+  --section-text-color:#353430;
+  --main-text-button-text-color:#353430;
+  --main-text-button-shadow:#FF8DCB;
+  --footer-title-color:#FFC2E6;
+  --footer-title-text-shadow:2px 2px #FF8DCB;
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image: url(../images/cover-image-light.png);
-  .header__theme-menu-item {
-  --color:#353430;
-}
-.decorated-zone::after {
-  --color:#353430;
-  --box-shadow-color:#353430;
-  }
-.decorated-zone::before {
-  --color:#353430;
-  --box-shadow-color:#353430;
-}
-.header__theme-menu-button {
-  --color:#353430;
-}
-.header__theme-menu-button:hover {
-  --hover-border-color:#32312D66;
-}
-.header_title {
-  --color:#FFC2E6;
-  --text-shadow: 4px 4px #FF8DCB;
-}
-.header_text {
-  --color:#353430;
-  --background-color:#FF8DCB;
-}
-.main_section_title {
-  --color:#353430;
-}
-.text-section__texts-title {
-  --color: #353430;
-  --background-color: #FF8DCB;
-}
-.section_text_item {
-  --color: #353430;
-  --background-color:#FF8DCB;
-}
-.section_text {
-  --color:#353430;
-}
-.main_text_button {
-  --text-color:#353430;
-  --text-shadow-button:#FF8DCB;
-  }
-.footer_title {
-  --color:#FFC2E6;
-  --text-shadow:2px 2px #FF8DCB;
-}
+  --icon-visibility:hidden;
+  --bk-color:#fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+  --header-theme-menu-item-color:#353430;
+  --dec-zone-after-color:#353430;
+  --dec-zone-after-box-shadow-color:#353430;
+  --dec-zone-before-color:#353430;
+  --dec-zone-before-box-shadow-color:#353430;
+  --header-theme-menu-button-color:#353430;
+  --header-theme-menu-button-hover-border-color:#32312D66;
+  --header-title-color:#FFC2E6;
+  --header-title-text-shadow: 4px 4px #FF8DCB;
+  --header-text-color:#353430;
+  --header-text-bk-color:#FF8DCB;
+  --main-sextion-title-color:#353430;
+  --text-section-texts-title-color: #353430;
+  --text-section-texts-title-bk-color: #FF8DCB;
+  --section-text-item-color: #353430;
+  --section-text-item-bk-color:#FF8DCB;
+  --section-text-color:#353430;
+  --main-text-button-text-color:#353430;
+  --main-text-button-shadow:#FF8DCB;
+  --footer-title-color:#FFC2E6;
+  --footer-title-text-shadow:2px 2px #FF8DCB;
   }
 }

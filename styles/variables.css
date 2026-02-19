@@ -4,62 +4,33 @@
 */
 :root {
   --background-image: url(../images/cover-image-dark.png);
-  --font-color:#FF0070;
-}
-.header {
-  --padding-inline: 10px;
-  --padding-block: 10px;
-}
-.header_title {
-  --color:#DB00FF;
-  --text-shadow: 4px 4px #FF0070;
-}
-.header_text {
-  --color: #000028;
-  --background-color: #FF0070;
-}
-.decorated-zone::before {
---color:#FF0070;
---box-shadow-color: #FF0070;
-}
-.decorated-zone::after {
---color:#FF0070;
---box-shadow-color: #FF0070;
-}
-.icon {
-  --color: #FF0070;
-}
-.header__theme-menu-item {
-  --color: #FF0070;
-}
-.header__theme-menu-button {
-  --color:#FF0070;
-}
-.header__theme-menu-button:hover {
-  --hover-border-color: #FF007066;
-}
-.header__theme-menu-button_active {
-  border: 1px solid currentColor;
-}
-.main_section_title {
-  --color:#FF0070;
-}
-.section_text_item {
-  --background-color:#FF0070;
-  --color:#000028;
-}
-.section_text {
-  --color:#F1B2CE;
-}
-.main_text_button {
-  --text-color:#F1B2CE;
-  --text-shadow-button:#FF0070;
-}
-.text-section__texts-title {
-  --background-color:#FF0070;
-  --color:#000028;
-}
-.footer_title {
-  --color: #DB00FF;
-  --text-shadow: 2px 2px #FF0070;
+  --bk-im-font-color:#FF0070;
+  --bk-color:#000028;
+  --header-padding-inline: 10px;
+  --header-padding-block: 10px;
+  --header-title-color:#DB00FF;
+  --header-title-text-shadow: 4px 4px #FF0070;
+  --header-text-color: #000028;
+  --header-text-bk-color: #FF0070;
+  --dec-zone-before-color:#FF0070;
+  --dec-zone-before-box-shadow-color: #FF0070;
+  --dec-zone-after-color:#FF0070;
+  --dec-zone-after-box-shadow-color: #FF0070;
+  --icon-color: #FF0070;
+  --icon-visibility:inherit;
+  --header-theme-menu-item-color: #FF0070;
+  --header-theme-menu-button-color:#FF0070;
+  --header-theme-menu-button-hover-border-color: #FF007066;
+  --header-theme-button-active-border: 1px solid currentColor;
+  --main-sextion-title-color:#FF0070;
+  --section-text-item-bk-color:#FF0070;
+  --section-text-item-color:#000028;
+  --section-text-color:#F1B2CE;
+  --main-text-button-text-color:#F1B2CE;
+  --main-text-button-shadow:#FF0070;
+  --text-section-texts-title-bk-color:#FF0070;
+  --text-section-texts-title-color:#000028;
+  --footer-title-color: #DB00FF;
+  --footer-title-text-shadow: 2px 2px #FF0070;
+
 }
