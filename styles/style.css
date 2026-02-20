@@ -10,9 +10,11 @@
   z-index: 0;
 }
 .header {
-  position: relative;
-  min-height: 668px;
   display: grid;
+  align-items: center;
+  height: 100vh; /* пи выставлении значения высоты 100vh header съезжает сильно, если браузер открыт в полный рост, посмотрел везде в пачке у ребят, у всех так стоит, получается значение правильное и просто нужно окно браузера уменьшить, что бы подходило под макет? */
+  min-height: 668px;
+  position: relative;
   grid-template-rows: 1fr min-content 1fr;
   padding-inline: var(--header-padding-inline);
   padding-block: var(--header-padding-block);
@@ -36,11 +38,8 @@
   height: 23px;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 18px;
-  letter-spacing: 0%;
   text-align: center;
   color: var(--header-theme-menu-item-color);
 }
@@ -72,11 +71,8 @@
   right: 20px;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 25px;
-  letter-spacing: 0%;
   text-align: center;
   color: var(--icon-color);
   visibility: var(--icon-visibility);
@@ -120,10 +116,8 @@
   grid-row: 2;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  letter-spacing: 0%;
   color: var(--header-title-color);
   text-shadow: var(--header-title-text-shadow);
 }
@@ -142,50 +136,27 @@
 .main_section_title {
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 23.4px;
-  letter-spacing: 0%;
   color: var(--main-sextion-title-color);
 }
 .title-decor {
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 23.4px;
-  letter-spacing: 0%;
   background-color: var(--section-text-item-bk-color);
   color: var(--section-text-item-color);
 }
-.section_text_item:nth-of-type(2) {
-  margin-block-start: 20px;
-}
-.food {
-  margin-block-start: 20px;
-}
-.gadgets {
-  margin-block-start: 20px;
-}
-.section_text_item:nth-of-type(3) {
-  margin-block-start: 20px;
-}
-.section_text_item:nth-of-type(4) {
-  margin-block-start: 20px;
-}
-.section_text_item:nth-of-type(5) {
+.main_section_content_why .title-decor:not(:first-child) {
+  /*сделал одинаковые отступы, добавив немного специфичныз условий, почему то валидатор ругается на вложенность элементов, поэтому пришлось расписать через длинные строки( */
   margin-block-start: 20px;
 }
 .section_text {
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 23.4px;
-  letter-spacing: 0%;
   color: var(--section-text-color);
   margin-block-start: 10px;
 }
@@ -196,7 +167,7 @@
 }
 .main_text_button:hover {
   border-bottom-color: currentColor;
-  text-decoration: underline;
+  border-bottom: solid #f1b2ce;
 }
 .main_text_button:focus-visible {
   outline: none;
@@ -205,24 +176,25 @@
 .main_section_content_what {
   margin-block-start: 50px;
 }
+.typical_text:not(:first-child) {
+  margin-block-start: 20px;
+}
 .main_section_content_advice {
   margin-block-start: 50px;
+}
+.main_section_content_advice .title-decor {
+  margin-block-start: 20px;
 }
 .text-section__texts-title {
   height: min-content;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 23.4px;
-  letter-spacing: 0%;
   background-color: var(--text-section-texts-title-bk-color);
   color: var(--text-section-texts-title-color);
 }
-.main_section_content_advice
-  .section_text_item
-  .section_text_item_another_weight {
+.section_text_item_an_weight {
   font-weight: 400;
 }
 .main_section_image {
@@ -236,23 +208,18 @@
   height: 100%;
 }
 .main_section_footer {
+  height: 100vh; /* пи выставлении значения высоты 100vh header съезжает сильно, если браузер открыт в полный рост, посмотрел везде в пачке у ребят, у всех так стоит, получается, значение правильное и просто нужно окно браузера уменьшить, что бы подходило под макет? */
   min-height: 668px;
-  margin-block-start: 40px;
   display: grid;
   align-items: center;
   justify-content: center;
   grid-template-rows: 1fr;
-  padding-inline: 10px;
-  padding-block: 10px;
 }
 .footer_title {
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  leading-trim: NONE;
   line-height: 83%;
-  letter-spacing: 0%;
   color: var(--footer-title-color);
   text-shadow: var(--footer-title-text-shadow);
 }
@@ -295,38 +262,42 @@
   }
   .main_section_content_what {
     margin-block-start: 80px;
-    .main_section_text {
-      grid-column: 1/3;
-    }
-    .typical_text:not(:last-child) {
-      margin-block-end: 20px;
-    }
+  }
+  .main_section_content_what .main_section_text {
+    grid-column: 1/3;
+  }
+  .main_section_content_what .typical_text:not(:last-child) {
+    margin-block-end: 20px;
   }
   .main_section_content_advice {
     margin-block-start: 80px;
-    .main_section_title {
-      grid-column: 1;
-    }
-    .container_advice {
-      grid-column: 2;
-      grid-row: 1;
-    }
-    .container_advice_item {
-      display: flex;
-      flex-direction: column;
-      gap:20px;
-    }
-    .title-decor {
-      font-weight: 400;
-    }
+  }
+  .main_section_content_advice .main_section_title {
+    grid-column: 1;
+  }
+  .main_section_content_advice .container_advice {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .main_section_content_advice .container_advice_item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main_section_content_advice .title-decor {
+    font-weight: 400;
+    margin-block-start: 0;
+  }
+  .main_section_content_advice .title-decor:not(:first-child) {
+    margin-block-start: 20px;
   }
   .main_section_image {
     margin-block-start: 80px;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    .section_text_item {
-      grid-column: 1/4;
-    }
+  }
+  .main_section_image .section_text_item {
+    grid-column: 1/4;
   }
   .card_image_sunset {
     grid-column: span 2;
@@ -341,8 +312,6 @@
     grid-column: 2/4;
   }
   .main_section_footer {
-    min-height: 1024px;
-    padding-inline: 20px;
     margin-block-start: 60px;
   }
   .footer_title {
@@ -356,7 +325,7 @@
   }
   .header__theme-menu {
     grid-column: 2;
-    align-content: flex-start;
+    align-self: flex-start;
     justify-content: center;
   }
   .header__theme-menu-list {
@@ -393,37 +362,35 @@
   }
   .main_section_content_what {
     grid-template-columns: repeat(3, 1fr);
-    .main_section_title {
-      grid-column: 1;
-    }
-    .main_section_text {
-      display: grid;
-      grid-column: 1/4;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .main_section_text_item {
-      display: grid;
-      grid-column: 1/4;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      .typical_text {
-        margin-inline-start: 0;
-      }
-    }
   }
-  .main_section_content_advice {
-    .main_section_title {
-      grid-column: 1;
-    }
+  .main_section_content_what .main_section_title {
+    grid-column: 1;
+  }
+  .main_section_content_what .main_section_text {
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main_section_content_what .main_section_text_item {
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .main_section_content_what .main_section_text_item .typical_text {
+    margin-block-start: 0;
+  }
+  .main_section_content_advice .main_section_title {
+    grid-column: 1;
   }
   .main_section_image {
     grid-template-columns: repeat(3, 1fr);
   }
   .main_section_footer {
     grid-template-columns: repeat(3, 1fr);
-    min-height: 768px;
   }
   .footer_title {
-    margin-inline-start: 257px;
+    grid-column: 2;
+    /*добавил настройку футера, теперь при экране больше 1500 он по центру*/
   }
 }
